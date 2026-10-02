@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | GFurniture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/Logo (5).png" alt="GFurniture" width="46" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav align-items-lg-center me-lg-4">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Shop Now <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="category.html">Home Furniture <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="product.html">Living Room <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="cart.html">About Us <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="checkout.html">Contact Us <i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+            <div class="d-flex gap-2 mt-3 mt-lg-0">
+              <a href="#" class="btn-pink">Log in</a>
+              <a href="#" class="btn-line">Get started</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h1 class="page-title">Checkout</h1>
+          <div class="row gx-5 gy-5">
+            <div class="col-lg-6">
+              <p class="crumb">Home / My Cart / <span>Checkout</span></p>
+              <div class="white-box">
+                <div class="d-flex justify-content-between"><h4>Shipping Information</h4><a href="#" class="small fw-semibold">Change Address <i class="fa-solid fa-pen ms-1"></i></a></div>
+                <p class="text-secondary mb-1 mt-3">Mirpur-10, Road 14A</p>
+                <p class="text-secondary mb-1">Dhaka, Bangladesh</p>
+                <p class="text-secondary mb-0">01758187028</p>
+              </div>
+              <div class="white-box">
+                <h4 class="mb-4">Select Your Payment Card</h4>
+                <div class="d-flex align-items-center gap-4 flex-wrap mb-3">
+                  <input class="form-check-input mt-0" type="radio" name="pay" value="card" checked />
+                  <img src="images/image 30.png" alt="visa" height="30" /><img src="images/image 32.png" alt="bkash" height="22" /><img src="images/Mastercard (1).png" alt="mastercard" height="30" /><img src="images/Nagad.png" alt="nagad" height="24" />
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <input class="form-check-input mt-0" type="radio" name="pay" value="cod" />
+                  <span>Cash on Delivery</span>
+                </div>
+              </div>
+              <form id="cardForm">
+                <div class="mb-4"><label class="form-label">Your Name</label><input type="text" class="form-control" placeholder="Enter your card number" /></div>
+                <div class="mb-4"><label class="form-label">Card Number</label><input type="text" class="form-control" placeholder="Enter your card number" /></div>
+                <div class="row mb-4">
+                  <div class="col-6"><label class="form-label">Expire Date</label><input type="text" class="form-control" placeholder="Expire Date" /></div>
+                  <div class="col-6"><label class="form-label d-flex justify-content-between">CVV <i class="fa-regular fa-circle-question"></i></label><input type="text" class="form-control" placeholder="CVV" /></div>
+                </div>
+                <div class="form-check mb-5">
+                  <input class="form-check-input" type="checkbox" id="save" checked />
+                  <label class="form-check-label small" for="save">Save this card for a faster checkout experience</label>
+                </div>
+              </form>
+              <div class="row g-3 mb-3">
+                <div class="col-8"><input type="text" class="form-control rounded-pill" style="height: 50px" placeholder="Add promo code" /></div>
+                <div class="col-4"><button type="button" class="btn-dark-pill w-100 py-3">Apply</button></div>
+              </div>
+              <button type="button" class="btn-dark-pill w-100 py-3">Confirm your Pay</button>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="fw-bold mb-5 mt-lg-5 pt-lg-2">Order Preview</h4>
+              <div class="row mb-3 small d-none d-md-flex">
+                <div class="col-4"><span class="chip">Items</span></div><div class="col-5"><span class="chip">Description</span></div><div class="col-3 text-end"><span class="chip">Price</span></div>
+              </div>
+              <div class="row align-items-start mb-4">
+                <div class="col-4"><img src="images/Rectangle 12 (5).png" alt="chair" class="rounded-4" /></div>
+                <div class="col-5"><b>Modern Soft Chair</b><br /><small class="text-secondary">The Modern Soft Chair boasts a harmonious</small>
+                  <div class="qty mt-2"><button class="minus" type="button">–</button><input type="text" value="1" readonly /><button class="plus" type="button">+</button></div></div>
+                <div class="col-3 text-end"><b class="fs-5">$30.99</b><br /><span class="old">$50.99</span></div>
+              </div>
+              <div class="row align-items-start mb-4">
+                <div class="col-4"><img src="images/Rectangle 12 (6).png" alt="chair" class="rounded-4" /></div>
+                <div class="col-5"><b>Modern Soft Chair</b><br /><small class="text-secondary">The Modern Soft Chair boasts a harmonious</small>
+                  <div class="qty mt-2"><button class="minus" type="button">–</button><input type="text" value="1" readonly /><button class="plus" type="button">+</button></div></div>
+                <div class="col-3 text-end"><b class="fs-5">$30.99</b><br /><span class="old">$50.99</span></div>
+              </div>
+              <div class="row align-items-start mb-4">
+                <div class="col-4"><img src="images/Rectangle 12 (7).png" alt="chair" class="rounded-4" /></div>
+                <div class="col-5"><b>Modern Soft Chair</b><br /><small class="text-secondary">The Modern Soft Chair boasts a harmonious</small>
+                  <div class="qty mt-2"><button class="minus" type="button">–</button><input type="text" value="1" readonly /><button class="plus" type="button">+</button></div></div>
+                <div class="col-3 text-end"><b class="fs-5">$30.99</b><br /><span class="old">$50.99</span></div>
+              </div>
+              <div class="sum-total mt-5"><span class="fs-2">Total</span><span class="fs-2">$467</span></div>
+              <div class="sum-row"><span>Subtotal</span><span>$565</span></div>
+              <div class="sum-row"><span>Discount (-20%)</span><span>424</span></div>
+              <div class="sum-row"><span>Delivery Fee</span><span>$424</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <img src="images/Logo (5).png" alt="GFurniture" width="36" class="mb-3" />
+            <p class="small-text mb-4">Join our newsletter to stay up to date on features and releases.</p>
+            <div class="d-flex sub mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" />
+              <button type="button">Subscribe</button>
+            </div>
+            <p class="small-text">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <h6>About Us</h6>
+            <ul><li>FAQ</li><li>Contact</li><li>Returns</li><li>Blog</li><li>Shipping</li></ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <h6>Customer Support</h6>
+            <ul><li>Affiliates</li><li>Apple Pay Payments</li><li>Returns</li><li>Returns Policy</li><li>Returns</li></ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <h6>Follow Us</h6>
+            <ul>
+              <li><i class="fa-brands fa-facebook-f me-3"></i>Facebook</li>
+              <li><i class="fa-brands fa-instagram me-3"></i>Instagram</li>
+              <li><i class="fa-brands fa-twitter me-3"></i>Twitter</li>
+              <li><i class="fa-brands fa-linkedin me-3"></i>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-md-6">© 2023 GFirnuture. All rights reserved.</div>
+          <div class="col-md-6 text-md-end mt-2 mt-md-0">
+            <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
